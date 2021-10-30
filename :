@@ -1,0 +1,7 @@
+#/bin/bash
+
+repository="git@github.xxxx.com:blablabla/reponame.git"
+
+localFolder="/Users/myname/dev/myfolder"
+
+git clone $repository" "$localFolder
