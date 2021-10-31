@@ -6,4 +6,5 @@ localFolder="/Users/myname/dev/myfolder"
 
 git clone $repository" "$localFolder
 
+i m modified the file on the clonefile1
 
