@@ -1,9 +1,0 @@
-cd /root
-curl -O http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.32.zip
-unzip Trimmomatic-0.32.zip
-cp Trimmomatic-0.32/trimmomatic-0.32.jar /usr/local/bin
-cd /mnt
-curl -O http://athyra.idyll.org/~t/subreads-A-R1.fastq.gz
-curl -O http://athyra.idyll.org/~t/subreads-A-R2.fastq.gz
-
-java -jar /usr/local/bin/trimmomatic-0.32.jar PE subreads-A-R1.fastq.gz subreads-A-R2.fastq.gz s1_pe s1_se s2_pe s2_se LEADING:2 TRAILING:2 SLIDINGWINDOW:4:2 MINLEN:25
